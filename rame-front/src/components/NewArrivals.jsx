@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const NewArrivals = () => {
   return (
-    <section className="mt-5 bg-beige rounded-4 p-4 d-flex flex-column flex-md-row align-items-center justify-content-between container">
+    <section className="mt-5 mb-5 bg-beige rounded-4 p-4 d-flex flex-column flex-md-row align-items-center justify-content-between container">
       {/* Imágenes */}
-      <div className="d-grid gap-3 gallery" data-aos="fade-rigth">
+      <div className="d-grid gap-3 gallery" data-aos="fade-right">
         <img
           src="/images/aritos1.jpg"
           alt="Anillos dorados"
