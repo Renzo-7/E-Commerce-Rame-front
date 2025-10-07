@@ -6,7 +6,7 @@ const Navbar = () => {
   const { cartItems, removeProduct, clear, total } = useCart();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav className="navbar navbar-expand-lg navbar-light bg-navbar shadow-sm">
       <div className="container">
         <Link className="navbar-brand fw-bold" to="/">
           <img src="/images/rame-logo.png" alt="Logo" height={70} />
@@ -43,9 +43,9 @@ const Navbar = () => {
             </li>
 
             {/* Dropdown carrito */}
-            <li className="nav-item dropdown ms-3">
+            <li className="nav-item dropdown">
               <button
-                className="btn btn-outline-primary position-relative dropdown-toggle"
+                className="btn position-relative dropdown-toggle"
                 id="cartDropdown"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"

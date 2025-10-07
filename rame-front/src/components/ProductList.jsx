@@ -22,30 +22,27 @@ const ProductList = () => {
   };
 
   return (
-    <div className="container mt-4">
-      <h2>Listado de productos</h2>
-
+    <div className="products-cart container mt-4">
       <div className="row">
         {products.map((p) => (
           <div className="col-md-3 mb-3" key={p._id}>
             <div className="card h-100 shadow-sm">
+              <img src="/images/aritos1.jpg" alt="" className="card-img-top" />
               <div className="card-body d-flex flex-column justify-content-between">
                 <div>
                   <h5 className="card-title">{p.nombre}</h5>
+                  <p className="card-text">{p.descripcion}</p>
                   <p className="card-text">Precio: ${p.precio}</p>
                   <p className="card-text">
-                    Stock:{" "}
-                    {p.stock > 0 ? (
-                      p.stock
-                    ) : (
-                      <span className="text-danger">Sin stock</span>
+                    {p.stock === 0 && (
+                      <p className="card-text text-danger">Sin stock</p>
                     )}
                   </p>
                 </div>
 
                 {/* Botón agregar al carrito */}
                 <button
-                  className="btn btn-primary mt-2"
+                  className="btn-products-card mt-2 rounded-2"
                   disabled={p.stock === 0}
                   onClick={() => addToCart(p)}
                 >

@@ -1,4 +1,4 @@
-export const getProducts = async (page = 1, limit = 10) => {
+export const getProducts = async (page = 1, limit = 12) => {
   const res = await fetch(
     `http://localhost:8080/api/products?page=${page}&limit=${limit}`
   );

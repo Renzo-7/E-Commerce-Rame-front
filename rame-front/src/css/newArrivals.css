@@ -8,10 +8,12 @@
   color: #fff;
   border: none;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .btn-beige:hover {
   background-color: #8f6e4c;
+  color: white;
 }
 
 /* Galería de imágenes */
