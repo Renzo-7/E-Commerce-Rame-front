@@ -54,3 +54,11 @@
   cursor: not-allowed;
   opacity: 0.7; /* opcional, para dar sensación de inactividad */
 }
+
+.dropdown-toggle-products:hover {
+  color: #8f6e4c;
+}
+
+.item-simple:hover {
+  color: #8f6e4c;
+}

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NewArrivals = () => {
   return (
-    <section className="mt-5 mb-5 bg-beige rounded-4 p-4 d-flex flex-column flex-md-row align-items-center justify-content-between container">
+    <section className="mt-5 mb-4 bg-beige rounded-4 p-4 d-flex flex-column flex-md-row align-items-center justify-content-between container">
       {/* Imágenes */}
       <div className="d-grid gap-3 gallery" data-aos="fade-right">
         <img
@@ -29,7 +29,7 @@ const NewArrivals = () => {
 
       {/* Texto y botón */}
       <div className="text-center text-md-start mt-4 mt-md-0 ms-md-4 me-5">
-        <h2 className="fw-medium" style={{ color: "#5c3d1e" }}>
+        <h2 className="fw-medium" style={{ color: "#724b23" }}>
           Nuevos <br /> ingresos
         </h2>
         <Link to="/products" className="btn btn-beige mt-3">

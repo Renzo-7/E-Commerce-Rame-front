@@ -45,7 +45,7 @@ const Navbar = () => {
             {/* Dropdown carrito */}
             <li className="nav-item dropdown">
               <button
-                className="btn position-relative dropdown-toggle"
+                className="btn position-relative dropdown-toggle cart-button"
                 id="cartDropdown"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"

@@ -1,0 +1,21 @@
+.icon-contact {
+  color: #724b23;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+.icon-contact:hover {
+  color: #d2ad7c;
+}
+
+.btn-contact {
+  background-color: #b28c63;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.btn-contact:hover {
+  background-color: #8f6e4c;
+}

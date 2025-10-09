@@ -33,11 +33,11 @@ const ProductList = () => {
                   <h5 className="card-title">{p.nombre}</h5>
                   <p className="card-text">{p.descripcion}</p>
                   <p className="card-text">Precio: ${p.precio}</p>
-                  <p className="card-text">
+                  <div className="card-text">
                     {p.stock === 0 && (
                       <p className="card-text text-danger">Sin stock</p>
                     )}
-                  </p>
+                  </div>
                 </div>
 
                 {/* Botón agregar al carrito */}

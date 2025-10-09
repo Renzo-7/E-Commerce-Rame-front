@@ -14,7 +14,7 @@ function Products() {
 
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle dropdown-toggle-products"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -52,7 +52,7 @@ function Products() {
 
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle dropdown-toggle-products"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -85,7 +85,7 @@ function Products() {
 
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle dropdown-toggle-products"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -118,7 +118,7 @@ function Products() {
 
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle dropdown-toggle-products"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -140,13 +140,13 @@ function Products() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link item-simple" href="#">
                 Relojes
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link item-simple" href="#">
                 Complementos
               </a>
             </li>

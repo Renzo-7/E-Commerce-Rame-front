@@ -11,7 +11,7 @@ function VisualDisplay() {
       <h2 className="text-start mb-4">Muestra Visual</h2>
       <div className="row justify-content-center">
         {imagenes.map((src, index) => (
-          <div key={index} className="col-6 col-md-3 mb-5" data-aos="zoom-in">
+          <div key={index} className="col-6 col-md-3" data-aos="zoom-in">
             <img
               src={src}
               alt={`muestra-${index}`}

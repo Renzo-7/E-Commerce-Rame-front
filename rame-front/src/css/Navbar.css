@@ -1,3 +1,11 @@
 .bg-navbar {
   background-color: #f5e4d2;
 }
+
+div ul li .nav-link:hover {
+  color: #724b23;
+}
+
+.cart-button:hover {
+  color: #724b23;
+}

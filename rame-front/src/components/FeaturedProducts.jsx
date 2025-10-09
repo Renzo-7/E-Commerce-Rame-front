@@ -25,6 +25,7 @@ function FeaturedProducts() {
               />
               <div className="card-body mb-5">
                 <h5 className="card-title">{product.nombre}</h5>
+                <p className="card-text">{product.descripcion}</p>
                 <p className="card-text">${product.precio}</p>
               </div>
             </div>

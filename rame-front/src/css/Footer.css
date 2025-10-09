@@ -1,0 +1,18 @@
+.footer-container {
+  background-color: #f5e4d2;
+  border-top: 2px solid #000;
+}
+
+.footer-logo {
+  height: 75px;
+  object-fit: contain;
+}
+
+.icons-color {
+  color: #724b23;
+  transition: color 0.3 ease;
+}
+
+.icons-color:hover {
+  color: #d2ad7c;
+}
