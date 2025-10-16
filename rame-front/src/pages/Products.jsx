@@ -123,7 +123,7 @@ function Products() {
                 role="button"
                 data-bs-toggle="dropdown"
               >
-                Marroquineria
+                Marroquinería
               </a>
               <ul className="dropdown-menu">
                 <li>
