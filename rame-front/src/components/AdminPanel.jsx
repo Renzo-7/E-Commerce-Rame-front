@@ -16,10 +16,31 @@ function AdminPanel() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0];
+    const data = new FormData();
+    data.append("file", file);
+    data.append("upload_preset", "rame_preset"); // tu preset
+    data.append("folder", "productos");
+
+    const res = await fetch(
+      "https://api.cloudinary.com/v1_1/renzo-dev/image/upload",
+      {
+        method: "POST",
+        body: data,
+      }
+    );
+
+    const fileData = await res.json();
+    setFormData({ ...formData, imagen: fileData.secure_url });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("/products/add", formData, { withCredentials: true });
+      await axios.post("http://localhost:8080/api/products", formData, {
+        withCredentials: true,
+      });
       alert("Producto agregado ✅");
     } catch (err) {
       alert("Error al agregar producto ❌");
@@ -141,15 +162,21 @@ function AdminPanel() {
         </div>
 
         <div className="col-md-10">
-          <label className="form-label">URL de imagen</label>
-          <input
-            type="text"
-            className="form-control"
-            name="imagen"
-            value={formData.imagen}
-            onChange={handleChange}
-            required
-          />
+          <input type="file" accept="image/*" onChange={handleImageUpload} />
+
+          {formData.imagen && (
+            <img
+              src={formData.imagen}
+              alt="Vista previa"
+              style={{
+                width: "150px",
+                height: "150px",
+                objectFit: "cover",
+                marginTop: "10px",
+                borderRadius: "8px",
+              }}
+            />
+          )}
         </div>
         <div className="col-12 text-center">
           <button type="submit" className="btn btn-products-card">

@@ -1,8 +1,11 @@
-export const getProducts = async (page = 1, limit = 12) => {
+export const getProducts = async (page = 1, limit = 12, filters = {}) => {
+  const params = new URLSearchParams({ page, limit, ...filters });
+
   const res = await fetch(
-    `http://localhost:8080/api/products?page=${page}&limit=${limit}`
+    `http://localhost:8080/api/products?${params.toString()}`
   );
   if (!res.ok) throw new Error("Error al obtener productos");
+
   return res.json(); // { products, pagination }
 };
 

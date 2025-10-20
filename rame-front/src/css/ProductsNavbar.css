@@ -18,6 +18,8 @@
   transition: background-color 0.3s ease;
   font-weight: bold;
   padding: 0.5rem 1rem;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .btn-products:hover {

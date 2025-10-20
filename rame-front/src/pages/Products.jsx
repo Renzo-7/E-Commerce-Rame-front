@@ -1,4 +1,5 @@
 import ProductList from "../components/ProductList.jsx";
+import { Link } from "react-router-dom";
 
 function Products() {
   return (
@@ -7,9 +8,9 @@ function Products() {
         <nav className="products-navbar container">
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <button className="btn-products rounded-2">
+              <Link className="btn-products rounded-2" to="/products">
                 Todos los productos
-              </button>
+              </Link>
             </li>
 
             <li className="nav-item dropdown">
@@ -23,29 +24,44 @@ function Products() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Plata&subcategory=Abridores"
+                  >
                     Abridores
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Plata&subcategory=Aros"
+                  >
                     Aros
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Plata&subcategory=Anillos"
+                  >
                     Anillos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Plata&subcategory=Cadenas"
+                  >
                     Cadenas
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Plata&subcategory=Pulseras"
+                  >
                     Pulseras
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -61,24 +77,36 @@ function Products() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Acero blanco&subcategory=Aros"
+                  >
                     Aros
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Acero blanco&subcategory=Anillos"
+                  >
                     Anillos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Acero blanco&subcategory=Cadenas"
+                  >
                     Cadenas
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Acero blanco&subcategory=Pulseras"
+                  >
                     Pulseras
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -94,24 +122,36 @@ function Products() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Acero dorado&subcategory=Aros"
+                  >
                     Aros
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Acero dorado&subcategory=Anillos"
+                  >
                     Anillos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Acero dorado&subcategory=Cadenas"
+                  >
                     Cadenas
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Acero dorado&subcategory=Pulseras"
+                  >
                     Pulseras
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -127,28 +167,40 @@ function Products() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Marroquineria&subcategory=Billeteras"
+                  >
                     Billeteras
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/products?category=Marroquineria&subcategory=Carteras"
+                  >
                     Carteras
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link item-simple" href="#">
+              <Link
+                className="nav-link item-simple"
+                to="/products?category=Relojes"
+              >
                 Relojes
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link item-simple" href="#">
+              <Link
+                className="nav-link item-simple"
+                to="/products?category=Complementos"
+              >
                 Complementos
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
